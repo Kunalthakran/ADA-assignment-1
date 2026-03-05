@@ -1,5 +1,3 @@
-# ADA Assignment 1
-# Analysis and Design of Algorithms
 # Importing all necessary libraries
 
 import time
@@ -7,10 +5,8 @@ import random
 import matplotlib.pyplot as plt
 from functools import lru_cache
 
-
-# -------------------------------
 # Task 1: Algorithm Growth Observation
-# -------------------------------
+
 
 def constant_time(n):
     return n * 2
@@ -70,9 +66,7 @@ plt.legend()
 plt.show()
 
 
-# -------------------------------
 # Task 2: Best, Average and Worst Case Analysis
-# -------------------------------
 
 def linear_search(arr, key):
     for i in arr:
@@ -125,9 +119,7 @@ plt.legend()
 plt.show()
 
 
-# -------------------------------
 # Task 3: Recursion and Recurrence Validation
-# -------------------------------
 
 def factorial(n):
     if n == 0 or n == 1:
@@ -181,9 +173,7 @@ print("Naive Fibonacci: Calls =", fib_calls, "Time =", t1)
 print("DP Fibonacci: Calls =", fib_dp_calls, "Time =", t2)
 
 
-# -------------------------------
 # Task 4: Solving Recurrences through Code
-# -------------------------------
 
 # T(n) = T(n/2) + n
 
@@ -224,3 +214,4 @@ print("T(n) = T(n/2) + n -> Calls:", calls1)
 calls2 = 0
 recurrence2(n)
 print("T(n) = 2T(n/2) + n -> Calls:", calls2)
+
